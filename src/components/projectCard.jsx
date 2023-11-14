@@ -1,4 +1,4 @@
-import Tag from './tag'
+import Tag from '@/components/tag'
 
 const text = (title, description, tags) => {
   return (
