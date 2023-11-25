@@ -30,7 +30,7 @@ const image = (images, link, index) => {
 function ProjectCard(project, index) {
   return (
     <>
-      <div className="m-8 flex flex-1 flex-col gap-8 text-start md:flex-row">
+      <div className="flex flex-1 flex-col gap-8 text-start md:flex-row">
         {index % 2 == 0 ? (
           <>
             {text(project.title, project.description, project.tags)}

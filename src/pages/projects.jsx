@@ -10,6 +10,14 @@ const projects = [
     tags: ['Dev Team', 'Design Team', 'Project Manager']
   },
   {
+    title: 'WAX Labs 3.0',
+    description:
+      'A blockchain based proposal management web service that allows users to submit project ideation documents and deliverables for potential funding selection.',
+    link: 'https://labs.wax.io/',
+    images: ['projects/waxlabs01.png', './projects/waxlabs02.png', './projects/waxlabs03.png'],
+    tags: ['Dev Team', 'Design Team', 'Project Manager']
+  },
+  {
     title: 'NFT Draft',
     description:
       'An NFT Fantasy Sports NFL game that allows players to create the best Rosters to compete in multiplayer tournaments.',
@@ -44,7 +52,11 @@ const projects = [
 ]
 
 function Projects() {
-  return <>{projects.map((project, index) => ProjectCard(project, index))}</>
+  return (
+    <>
+      <div className="flex flex-1 flex-col gap-12">{projects.map((project, index) => ProjectCard(project, index))}</div>
+    </>
+  )
 }
 
 export default Projects
